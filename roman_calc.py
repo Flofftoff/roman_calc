@@ -1,8 +1,12 @@
-#        Hallo, Stafan, Roland & Andreas, ich hab hier nochmal die Aufgabe durch gearbeitet und 
+#        Hallo, Stafan, Roland & Andreas, ich hab hier nochmal die Aufgabe von gestern durch gearbeitet und 
 #        habe herrausgefunden, warum das gestern so Probleme gab. Denn man mag es sich kaum vorstellen,
-#        aber ich habe tatsächlich If-Else-Statements vergessen. Das ist mir dann tatsächlich erst am späten
-#        Abend aufgefallen. Ich habe mich dann heute morgen rangesetzt und angefangen einfach mal runterzuschreiben.
+#        aber ich habe unter dieser Stresssituation tatsächlich vergessen dass If-Else-Statements existieren. 
+#        Ich versuchte durchgehend krampfhaft zu überlegen, wie ich 2 Werte verleich. Das ist mir dann tatsächlich 
+#        erst am späten Abend aufgefallen. Ich habe mich dann heute morgen rangesetzt und angefangen einfach mal runterzuschreiben.
+#
 #        Zur Transparenz: ich habe die Funktion .pop, .join & reversed() gegooglet, der Rest ist völlig mein Werk.
+#
+#        Beste Grüße Boas
 
 def input_numbers():
     i = 0
