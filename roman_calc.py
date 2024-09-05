@@ -1,12 +1,12 @@
-#        Hallo, Stefan, Roland & Andreas, ich hab hier nochmal die Aufgabe von gestern durch gearbeitet und 
+#        Hallo, Stefan, Roland & Andreas, ich habe hier nochmal die Aufgabe von gestern durchgearbeitet und 
 #        habe herausgefunden, warum es gestern so Probleme gab. Denn man mag es sich kaum vorstellen,
-#        aber ich habe unter dieser Prüfungssituation tatsächlich vergessen dass If-Else-Statements existieren. 
+#        aber ich habe unter dieser Prüfungssituation tatsächlich vergessen, dass If-Else-Statements existieren. 
 #        Ich versuchte durchgehend krampfhaft zu überlegen, wie ich 2 Werte vergleichen könnte. Das ist mir dann leider 
 #        erst am späten Abend aufgefallen. Ich habe mich heute Morgen rangesetzt und angefangen einfach mal runterzuschreiben.
 #
-#        Zur Transparenz: ich habe die Funktion .pop(), .join() & reversed() gegooglet, der Rest ist völlig mein Werk.
+#        Zur Transparenz: ich habe die Funktion .pop(), .join() & reversed() gegooglet, der Rest ist auswendig entstanden.
 #
-#        Sie haben meine Telefonnummer, falls Fragen oder Hinweise bestehen bitte ich um ihren Anruf.
+#        Ihr haben meine Telefonnummer, falls Fragen oder Hinweise bestehen, bitte ich um einen Anruf.
 #        Beste Grüße Boas
 
 def input_numbers():
@@ -32,9 +32,9 @@ def convert_from_roman(deci_numbers, roman_numbers, input_num): #converting numb
         #Uncomment the following line to see each letter be converted to it's corresponding number
         #print(f"Deine Übersetzung lautet: {d_num_raw}")    
         
-        if len(i_r_num) != len(d_num_raw): #to validate. if something goes horrobly wrong, it breaks here.
+        if len(i_r_num) != len(d_num_raw): #to validate. if something goes horrobly wrong, it quits here.
             print("Error")
-            return(False)
+            quit()
 
         biggest_number = 0 # creating variable
         for i in d_num_raw: #finding biggest number in list. If we know the biggest number (f.e. [I,I,V]), we can add all the number in front of it, and substract them from the "main" number
