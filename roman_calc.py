@@ -50,9 +50,6 @@ def convert_from_roman(deci_numbers, roman_numbers, input_num): #converting numb
 
         d_num_final = value - subtract #subtracting suffix (if needed)
         converted_numbers.append(d_num_final) #appending converted number to list and start over
-    print(f"Converted numbers are:")
-    for numbers in converted_numbers:
-        print(numbers)
     return(converted_numbers)   
 
 def calc(numbers):
