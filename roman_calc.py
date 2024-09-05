@@ -1,9 +1,3 @@
-"""def input_numbers():
-    one = input(f"Gib mir die erste Nummer\n")
-    two = input(f"Gib mir die zweite Nummer\n")
-    r_num = [one, two] #To make it scalable
-    return(r_num)"""
-
 def input_numbers():
     i = 0
     r_num = []
