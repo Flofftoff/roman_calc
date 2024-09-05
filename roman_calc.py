@@ -2,7 +2,7 @@
 #        habe herrausgefunden, warum das gestern so Probleme gab. Denn man mag es sich kaum vorstellen,
 #        aber ich habe tatsächlich If-Else-Statements vergessen. Das ist mir dann tatsächlich erst am späten
 #        Abend aufgefallen. Ich habe mich dann heute morgen rangesetzt und angefangen einfach mal runterzuschreiben.
-#        Zur Transparenz: ich habe die Funktion .pop, .join & reversed() gegooglet. 
+#        Zur Transparenz: ich habe die Funktion .pop, .join & reversed() gegooglet, der Rest ist völlig mein Werk.
 
 def input_numbers():
     i = 0
