@@ -12,7 +12,7 @@ def input_numbers():
     i = 0
     r_num = []
     while True:
-        r_num.append(input(f" Gib die {i+1}. Zahl ein. Wenn du fertig bist, drücke Enter ohne eine Eingabe\n"))
+        r_num.append(input(f"Gib die {i+1}. Zahl ein. Wenn du fertig bist, drücke Enter ohne eine Eingabe\n"))
         if r_num[i] == "": # breaks if user wants to proceed
             r_num.pop() #removes last item (created empty item to proceed due to pressing enter)
             break
@@ -74,17 +74,16 @@ def convert_from_deci(deci_numbers, roman_numbers, deci_result):
         except: 
             pass
     output = "".join(roman_list) #converting list to string 
-    return(output) #and outputs
+    return(output) #and outputs the combined string
 
 def main(deci_numbers, roman_numbers):
     usr_input = input_numbers() # gets user input
     converted_numbers = convert_from_roman(deci_numbers, roman_numbers, usr_input) #starts conversion from roman to decimal
     deci_result = calc(converted_numbers) #starts calculation/adding process
-    output = convert_from_deci(deci_numbers, roman_numbers, deci_result) #converting back
+    output = convert_from_deci(deci_numbers, roman_numbers, deci_result) #converting from decimal to roman
     print(f"Das Ergebnis ist:", output) #and outputting result
 
-if __name__ == "__main__":
+if __name__ == "__main__": #defining constants and starting the programm
     deci_numbers = [1,5,10,50,100,500,1000]
     roman_numbers = ["I","V","X","L","C","D","M"]
     main(deci_numbers, roman_numbers)
-
