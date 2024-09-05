@@ -1,3 +1,9 @@
+#        Hallo, Stafan, Roland & Andreas, ich hab hier nochmal die Aufgabe durch gearbeitet und 
+#        habe herrausgefunden, warum das gestern so Probleme gab. Denn man mag es sich kaum vorstellen,
+#        aber ich habe tatsächlich If-Else-Statements vergessen. Das ist mir dann tatsächlich erst am späten
+#        Abend aufgefallen. Ich habe mich dann heute morgen rangesetzt und angefangen einfach mal runterzuschreiben.
+#        Zur Transparenz: ich habe die Funktion .pop, .join & reversed() gegooglet. 
+
 def input_numbers():
     i = 0
     r_num = []
