@@ -22,24 +22,24 @@ def input_numbers():
 def convert_from_roman(deci_numbers, roman_numbers, input_num): #converting numbers from roman to decimal, through comparing them with indexes in lists
     converted_numbers = []
     for i_r_num in input_num:        
-        d_num_raw = []
+        d_num_raw = [] # The idea is to convert every letter to it corresponding number, therefore we initalize the decimal_numbers_raw list
         for letter in i_r_num: #going trough string
-            for i in roman_numbers: #going through list
+            for i in roman_numbers: #going through list of Roman Letters
                 if letter == i:
-                    d_num_raw.append(deci_numbers[roman_numbers.index(i)]) # adding converted numers to a list to later add later
-                    break
+                    d_num_raw.append(deci_numbers[roman_numbers.index(i)]) # adding converted numers to a list to add them together later
+                    break # exits the loop after finding the correlationg number
 
         if len(i_r_num) != len(d_num_raw): #to validate, if something goes horrobly wrong, it breaks here.
             print("Error")
             return(False)
 
-        biggest_number = 0
+        biggest_number = 0 # initializing variable
         for i in d_num_raw: #finding biggest number to subtract everything before
-            if i > biggest_number:
+            if i > biggest_number: 
                 biggest_number = i 
-            biggest_number_index = d_num_raw.index(biggest_number)
+            biggest_number_index = d_num_raw.index(biggest_number) # using built in .index function to find the biggest number in the d_num_raw list (f.e. [1,4,5]), therefore the command would be d_num_raw.index(5) and it would return 2
 
-        subtract = 0
+        subtract = 0 #init var 
         if biggest_number_index > 0: #if the biggest nummer is in first place (f. e. XIII) nothing needs to be subtracted
             for number in range(biggest_number_index): #adding every number before the biggest number
                 subtract = subtract + d_num_raw[number] #+1 to compensate stating to count at 0
